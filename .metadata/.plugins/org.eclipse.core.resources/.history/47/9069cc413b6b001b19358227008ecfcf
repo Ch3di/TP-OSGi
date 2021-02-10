@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AchatMoteurAPI
+Bundle-SymbolicName: AchatMoteurAPI
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: AchatMoteurAPI
+Bundle-RequiredExecutionEnvironment: JavaSE-11

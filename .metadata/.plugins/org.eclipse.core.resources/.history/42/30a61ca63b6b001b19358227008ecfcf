@@ -1,0 +1,5 @@
+package vendeur;
+
+public interface AchatVoitureInterface {
+
+}

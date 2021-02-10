@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AchatMoteur
+Bundle-SymbolicName: AchatMoteur
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: achatmoteur.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Import-Package: org.osgi.framework;version="1.3.0"
+Automatic-Module-Name: AchatMoteur
+Require-Bundle: AchatMoteurAPI;bundle-version="1.0.0"

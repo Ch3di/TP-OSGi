@@ -1,0 +1,13 @@
+package achatvoiture;
+
+import vendeur.AchatVoitureInterface;
+
+public class AchatVoitureImpl implements AchatVoitureInterface {
+
+	@Override
+	public void acheterVoiture() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

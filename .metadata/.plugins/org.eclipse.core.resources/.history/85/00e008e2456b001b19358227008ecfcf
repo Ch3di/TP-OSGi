@@ -1,0 +1,13 @@
+package achatcarrosserie;
+
+import carroussier.AchatCarrosserieInterface;
+
+public class AchatCarrosserie implements AchatCarrosserieInterface {
+
+	@Override
+	public void AcheterCorrosserie() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

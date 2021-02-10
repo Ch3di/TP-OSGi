@@ -1,0 +1,49 @@
+package achatVoiture;
+import java.util.Dictionary;
+import java.util.Properties;
+import motoriste.AchatMoteurInterface;
+import
+import
+import
+import
+import
+import
+org.osgi.framework.BundleActivator;
+org.osgi.framework.BundleContext;
+org.osgi.framework.ServiceEvent;
+org.osgi.framework.ServiceListener;
+org.osgi.framework.ServiceRegistration;
+org.osgi.util.tracker.ServiceTracker;
+import carrossier.AchatCorrosserieInterface;
+import vendeur.AchatVoitureInterface;
+public class AchatVoitureImpl implements BundleActivator, AchatVoitureInterface,
+ServiceListener {
+private
+private
+private
+private
+ServiceTracker achatMoteurTracker;
+ServiceTracker achatCarrosserieTracker;
+ServiceRegistration registration;
+static BundleContext leContext;
+public void start(BundleContext context) throws Exception {
+System.out.println("Start Achat Voiture");
+leContext = context;
+context.addServiceListener(this);
+Properties props = new Properties();
+props.put("Language", "French");
+registration =
+context.registerService(AchatVoitureInterface.class.getName(), new
+AchatVoitureImpl(), (Dictionary)props);
+System.out.println("\t Service achat voiture enregistré.");
+}
+/*
+* (non-Javadoc)
+* @see
+org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+*/
+public void stop(BundleContext context) throws Exception {
+registration.unregister();
+System.out.println("\t Service achat voiture supprimé.");
+System.out.println("Stop Achat Voiture");
+}

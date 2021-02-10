@@ -1,0 +1,5 @@
+package motoriste;
+
+public interface AchatMoteurInterface {
+
+}

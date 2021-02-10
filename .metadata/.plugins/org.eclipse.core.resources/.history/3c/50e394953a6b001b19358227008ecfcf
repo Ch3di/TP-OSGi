@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AchatCarrosserieInterface
+Bundle-SymbolicName: AchatCarrosserieInterface
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: AchatCarrosserieInterface
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: carroussier
